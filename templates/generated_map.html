@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_53366f311c334389e3998f085521b7ac {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_53366f311c334389e3998f085521b7ac" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_53366f311c334389e3998f085521b7ac = L.map(
+                "map_53366f311c334389e3998f085521b7ac",
+                {
+                    center: [25.753793, 82.948879],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_022ed72628183f1f05288e992829998b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_022ed72628183f1f05288e992829998b.addTo(map_53366f311c334389e3998f085521b7ac);
+        
+    
+            var marker_b7add0c9f09f0ae91409e3bdda55fcac = L.marker(
+                [25.753793, 82.948879],
+                {
+}
+            ).addTo(map_53366f311c334389e3998f085521b7ac);
+        
+    
+            var icon_34d3ac8a27c4521dddf943a951e37b9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b7add0c9f09f0ae91409e3bdda55fcac.setIcon(icon_34d3ac8a27c4521dddf943a951e37b9a);
+        
+    
+        var popup_ee7dab1275a26df5f0f12aa3433056d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ebaa642e2d6f22ec1cb7237be604ccf2 = $(`<div id="html_ebaa642e2d6f22ec1cb7237be604ccf2" style="width: 100.0%; height: 100.0%;">You are here</div>`)[0];
+                popup_ee7dab1275a26df5f0f12aa3433056d2.setContent(html_ebaa642e2d6f22ec1cb7237be604ccf2);
+            
+        
+
+        marker_b7add0c9f09f0ae91409e3bdda55fcac.bindPopup(popup_ee7dab1275a26df5f0f12aa3433056d2)
+        ;
+
+        
+    
+    
+            var marker_d2da0b3fa60187e6b9bda126e49d1738 = L.marker(
+                [25.752317, 82.946685],
+                {
+}
+            ).addTo(map_53366f311c334389e3998f085521b7ac);
+        
+    
+            var icon_a5c4d58dfbb216597ce0d87e99e94a7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d2da0b3fa60187e6b9bda126e49d1738.setIcon(icon_a5c4d58dfbb216597ce0d87e99e94a7e);
+        
+    
+        var popup_4fbd75ff6c57a3276320a3b263f8ba0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ff79087463c0ca801092c21c84d8b0d = $(`<div id="html_4ff79087463c0ca801092c21c84d8b0d" style="width: 100.0%; height: 100.0%;">Chandresh General Store ((25.752317, 82.946685))</div>`)[0];
+                popup_4fbd75ff6c57a3276320a3b263f8ba0b.setContent(html_4ff79087463c0ca801092c21c84d8b0d);
+            
+        
+
+        marker_d2da0b3fa60187e6b9bda126e49d1738.bindPopup(popup_4fbd75ff6c57a3276320a3b263f8ba0b)
+        ;
+
+        
+    
+    
+            var marker_5b2c77ca051cd500f894fd728ca50d2e = L.marker(
+                [25.75282, 82.94692],
+                {
+}
+            ).addTo(map_53366f311c334389e3998f085521b7ac);
+        
+    
+            var icon_6ce109242d240a37969a50a986a6c2d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5b2c77ca051cd500f894fd728ca50d2e.setIcon(icon_6ce109242d240a37969a50a986a6c2d0);
+        
+    
+        var popup_2d6a1b95a270f7f065e5f7d08adf34b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16a76b82fe306224afc50a8c4d1c73ba = $(`<div id="html_16a76b82fe306224afc50a8c4d1c73ba" style="width: 100.0%; height: 100.0%;">Moni Devi General Store ((25.75282, 82.94692))</div>`)[0];
+                popup_2d6a1b95a270f7f065e5f7d08adf34b3.setContent(html_16a76b82fe306224afc50a8c4d1c73ba);
+            
+        
+
+        marker_5b2c77ca051cd500f894fd728ca50d2e.bindPopup(popup_2d6a1b95a270f7f065e5f7d08adf34b3)
+        ;
+
+        
+    
+    
+            var marker_aad28af6dfe2314c2c9beed4ba5e9e5c = L.marker(
+                [25.787375, 82.996254],
+                {
+}
+            ).addTo(map_53366f311c334389e3998f085521b7ac);
+        
+    
+            var icon_9fbcdf3ee92b15ea54a8f940a8cecc3c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_aad28af6dfe2314c2c9beed4ba5e9e5c.setIcon(icon_9fbcdf3ee92b15ea54a8f940a8cecc3c);
+        
+    
+        var popup_82822b1775549302f12683eec13abea4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c67dc7e4fda757c331a651b817522ef = $(`<div id="html_7c67dc7e4fda757c331a651b817522ef" style="width: 100.0%; height: 100.0%;">Angaan ((25.787375, 82.996254))</div>`)[0];
+                popup_82822b1775549302f12683eec13abea4.setContent(html_7c67dc7e4fda757c331a651b817522ef);
+            
+        
+
+        marker_aad28af6dfe2314c2c9beed4ba5e9e5c.bindPopup(popup_82822b1775549302f12683eec13abea4)
+        ;
+
+        
+    
+    
+            var marker_88a7ba86a952dbd7df95451a827e63c5 = L.marker(
+                [25.80757, 82.999268],
+                {
+}
+            ).addTo(map_53366f311c334389e3998f085521b7ac);
+        
+    
+            var icon_8a4c4e0ae451864dbdbc17039b76e90f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_88a7ba86a952dbd7df95451a827e63c5.setIcon(icon_8a4c4e0ae451864dbdbc17039b76e90f);
+        
+    
+        var popup_2016d5a963e41dd2bd6eca477c741e6b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12d81869aa01d69da0d467c745203d82 = $(`<div id="html_12d81869aa01d69da0d467c745203d82" style="width: 100.0%; height: 100.0%;">Raman ((25.80757, 82.999268))</div>`)[0];
+                popup_2016d5a963e41dd2bd6eca477c741e6b.setContent(html_12d81869aa01d69da0d467c745203d82);
+            
+        
+
+        marker_88a7ba86a952dbd7df95451a827e63c5.bindPopup(popup_2016d5a963e41dd2bd6eca477c741e6b)
+        ;
+
+        
+    
+    
+            var marker_4f44edb37a00996143e0650210c44cd7 = L.marker(
+                [25.346826, 82.992287],
+                {
+}
+            ).addTo(map_53366f311c334389e3998f085521b7ac);
+        
+    
+            var icon_a1e94ebeb28fd857ee333ca5dd54cc81 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4f44edb37a00996143e0650210c44cd7.setIcon(icon_a1e94ebeb28fd857ee333ca5dd54cc81);
+        
+    
+        var popup_2f031b1197f23634e6155dc2d436d200 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_872cd57e9c564706ae079ac74f6058f3 = $(`<div id="html_872cd57e9c564706ae079ac74f6058f3" style="width: 100.0%; height: 100.0%;">Shashi General Store ((25.346826, 82.992287))</div>`)[0];
+                popup_2f031b1197f23634e6155dc2d436d200.setContent(html_872cd57e9c564706ae079ac74f6058f3);
+            
+        
+
+        marker_4f44edb37a00996143e0650210c44cd7.bindPopup(popup_2f031b1197f23634e6155dc2d436d200)
+        ;
+
+        
+    
+    
+            var marker_b4357a606e43a69978d06b8d79f35f69 = L.marker(
+                [25.7615, 82.9509],
+                {
+}
+            ).addTo(map_53366f311c334389e3998f085521b7ac);
+        
+    
+            var icon_63e163a745838961dfc9e06d85a1563d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b4357a606e43a69978d06b8d79f35f69.setIcon(icon_63e163a745838961dfc9e06d85a1563d);
+        
+    
+        var popup_a7fd16146fc16a1954e46d5a9e93ae89 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f8b64b9dc05f377440e7e28e3a51179d = $(`<div id="html_f8b64b9dc05f377440e7e28e3a51179d" style="width: 100.0%; height: 100.0%;">Vishal Mega Mart ((25.7615, 82.9509))</div>`)[0];
+                popup_a7fd16146fc16a1954e46d5a9e93ae89.setContent(html_f8b64b9dc05f377440e7e28e3a51179d);
+            
+        
+
+        marker_b4357a606e43a69978d06b8d79f35f69.bindPopup(popup_a7fd16146fc16a1954e46d5a9e93ae89)
+        ;
+
+        
+    
+    
+            var marker_7e05f67c62539288d3239f29d6c6517a = L.marker(
+                [25.755421, 82.940987],
+                {
+}
+            ).addTo(map_53366f311c334389e3998f085521b7ac);
+        
+    
+            var icon_b5dccd9488924ea1ae6cfaffebb3a986 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7e05f67c62539288d3239f29d6c6517a.setIcon(icon_b5dccd9488924ea1ae6cfaffebb3a986);
+        
+    
+        var popup_3299b7522e3d74706340503222045038 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_462a9b8f62eaa585a10c6ec86ab9ebae = $(`<div id="html_462a9b8f62eaa585a10c6ec86ab9ebae" style="width: 100.0%; height: 100.0%;">Shyam Kirana Store ((25.755421, 82.940987))</div>`)[0];
+                popup_3299b7522e3d74706340503222045038.setContent(html_462a9b8f62eaa585a10c6ec86ab9ebae);
+            
+        
+
+        marker_7e05f67c62539288d3239f29d6c6517a.bindPopup(popup_3299b7522e3d74706340503222045038)
+        ;
+
+        
+    
+    
+            var marker_a0ed3d0791d20c4337705b1b9e321cff = L.marker(
+                [25.76022, 82.945612],
+                {
+}
+            ).addTo(map_53366f311c334389e3998f085521b7ac);
+        
+    
+            var icon_a6b94153b961b8a2585027be157c90f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a0ed3d0791d20c4337705b1b9e321cff.setIcon(icon_a6b94153b961b8a2585027be157c90f1);
+        
+    
+        var popup_6b5c8b97c1da2d008c60b0c8b21e070c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a51fda77f95f88dbc65e0d030a273cc9 = $(`<div id="html_a51fda77f95f88dbc65e0d030a273cc9" style="width: 100.0%; height: 100.0%;">Mohan Fast Food ((25.76022, 82.945612))</div>`)[0];
+                popup_6b5c8b97c1da2d008c60b0c8b21e070c.setContent(html_a51fda77f95f88dbc65e0d030a273cc9);
+            
+        
+
+        marker_a0ed3d0791d20c4337705b1b9e321cff.bindPopup(popup_6b5c8b97c1da2d008c60b0c8b21e070c)
+        ;
+
+        
+    
+    
+            var marker_f5fd88dc112e9be1707ecb9ad21f8bf4 = L.marker(
+                [25.765987, 82.949321],
+                {
+}
+            ).addTo(map_53366f311c334389e3998f085521b7ac);
+        
+    
+            var icon_b44633ee3bf857b21dd6d1ed96c79a75 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f5fd88dc112e9be1707ecb9ad21f8bf4.setIcon(icon_b44633ee3bf857b21dd6d1ed96c79a75);
+        
+    
+        var popup_63d5edd879d64cd0f0c3dc180ca0c6e9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_defbb73c6ed2f6663167681bde9d466e = $(`<div id="html_defbb73c6ed2f6663167681bde9d466e" style="width: 100.0%; height: 100.0%;">Radha Medical Store ((25.765987, 82.949321))</div>`)[0];
+                popup_63d5edd879d64cd0f0c3dc180ca0c6e9.setContent(html_defbb73c6ed2f6663167681bde9d466e);
+            
+        
+
+        marker_f5fd88dc112e9be1707ecb9ad21f8bf4.bindPopup(popup_63d5edd879d64cd0f0c3dc180ca0c6e9)
+        ;
+
+        
+    
+    
+            var marker_1779000e8b8264b965a99485584b5353 = L.marker(
+                [25.770112, 82.953789],
+                {
+}
+            ).addTo(map_53366f311c334389e3998f085521b7ac);
+        
+    
+            var icon_8364dc104fdd7053fc3f3b2f9af639c5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1779000e8b8264b965a99485584b5353.setIcon(icon_8364dc104fdd7053fc3f3b2f9af639c5);
+        
+    
+        var popup_3e776caf2e095ecc794c9eafff0220b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ff429013503681a07807bde6e2b3403 = $(`<div id="html_3ff429013503681a07807bde6e2b3403" style="width: 100.0%; height: 100.0%;">Sita Sweets and Bakery ((25.770112, 82.953789))</div>`)[0];
+                popup_3e776caf2e095ecc794c9eafff0220b3.setContent(html_3ff429013503681a07807bde6e2b3403);
+            
+        
+
+        marker_1779000e8b8264b965a99485584b5353.bindPopup(popup_3e776caf2e095ecc794c9eafff0220b3)
+        ;
+
+        
+    
+    
+            var circle_521da3367767679f6147ca6e132221ae = L.circle(
+                [25.753793, 82.948879],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_53366f311c334389e3998f085521b7ac);
+        
+</script>
+</html>

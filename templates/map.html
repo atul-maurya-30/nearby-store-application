@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h2>Click on the Map to Add a Shop</h2>
+    <iframe id="mapFrame" src="/generate_map" width="100%" height="500px"></iframe>
+    
+    <h3>Enter Shop Name:</h3>
+    <input type="text" id="shopName" placeholder="Shop Name">
+    <button onclick="addShop()">Add Shop</button>
+
+    <script>
+        let selectedLat, selectedLon;
+
+        // Capture click event on the map
+        function handleMapClick(lat, lon) {
+            selectedLat = lat;
+            selectedLon = lon;
+            alert("Coordinates selected: " + lat + ", " + lon);
+        }
+
+        function addShop() {
+            let name = document.getElementById("shopName").value;
+            if (!name || !selectedLat || !selectedLon) {
+                alert("Please select a location and enter a shop name.");
+                return;
+            }
+
+            // Send data to Flask
+            $.ajax({
+                url: "/add_location",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({ name: name, lat: selectedLat, lon: selectedLon }),
+                success: function(response) {
+                    alert(response.message);
+                    location.reload();
+                }
+            });
+        }
+    </script>
+</body>
+</html>
