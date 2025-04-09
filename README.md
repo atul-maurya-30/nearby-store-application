@@ -1,35 +1,35 @@
-# Shop Radar - Local Business Connector  
+# Shop Radar (Development Phase)  
 
-An Android app to help customers discover and support nearby small businesses through geolocation, product listings, and order management.  
+🚧 *This project is currently under active development. Features and documentation may change.* 🚧  
 
----
-
-## 🔥 Key Features  
-### **For Customers**  
-- 📍 Find nearby shops using real-time GPS.  
-- 🛍️ Browse products and place orders.  
-- ⭐ Read reviews and ratings.  
-- 🚚 Track deliveries.  
-
-### **For Shop Owners**  
-- 🏪 Manage inventory and orders.  
-- 📊 Monitor customer feedback.  
-- 📱 Update product details easily.  
+An Android app designed to bridge the gap between local businesses and customers through geolocation-based discovery and digital ordering.  
 
 ---
 
-## 🛠️ Built With  
-- **Android** (Kotlin)  
-- **Firebase** (Authentication, Realtime Database)  
-- **Google Maps API** (Location services)  
+## 🌟 Current Features (Implemented)  
+✅ **Customer Side**  
+- Nearby shop discovery using GPS  
+- Basic product browsing  
+- Shop ratings display  
+
+✅ **Business Side**  
+- Inventory management dashboard  
+- Order notification system  
+
+## 🔜 Planned Features (In Progress)  
+🛠️ **Coming Soon**  
+- Online ordering system  
+- Delivery tracking integration  
+- Advanced review system  
 
 ---
 
-## 📥 How to Run  
-1. Download the APK from [Releases](#) *(or link to Google Play if published)*.  
-2. Install on your Android device.  
-3. Open the app and allow location permissions.  
+## 📚 Documentation  
+*Documentation will be updated as development progresses.*  
 
-*(Alternatively, for development:)*  
-```bash
-git clone https://github.com/yourusername/shop-radar.git
+---
+
+## ⚙️ Technical Stack  
+- **Frontend**: Android (Kotlin)  
+- **Backend**: Firebase (Auth, Realtime DB)  
+- **Maps**: Google Maps SDK  
