@@ -30,6 +30,6 @@ An Android app designed to bridge the gap between local businesses and customers
 ---
 
 ## ⚙️ Technical Stack  
-- **Frontend**: Android (Kotlin)  
-- **Backend**: Firebase (Auth, Realtime DB)  
-- **Maps**: Google Maps SDK  
+- **Frontend**: Android (Java)  
+- **Backend**: Firebase (Auth, Realtime DB (MYSQL))  
+- **Maps**: Open Street Map
